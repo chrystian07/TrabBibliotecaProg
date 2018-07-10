@@ -1,0 +1,56 @@
+<form  [formGroup]="form">
+    <mat-card>
+        <mat-card-title>
+            Cadastro de Alunos
+        </mat-card-title>
+        <mat-card-content>
+            <div fxLayout="collun">
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Matricula:" [(ngModel)]="pessoa.numeroMatricula" formControlName="numeroMatricula" />
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Nome:" [(ngModel)]="pessoa.nome" formControlName="nome"/>
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Cpf:" [(ngModel)]="pessoa.cpf" formControlName="cpf"/>
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Telefone:" [(ngModel)]="pessoa.telefone" formControlName="telefone"/>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="collun">
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="RG:" [(ngModel)]="pessoa.rg" formControlName="rg"/>
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Rua:" [(ngModel)]="pessoa.rua" formControlName="rua"/>
+                    </mat-form-field>
+                </div>
+                <span fxFlex="2%"></span>
+                <div fxLayout="row">
+                    <mat-form-field>
+                        <input matInput placeholder="Numero:" [(ngModel)]="pessoa.numero" formControlName="numero"/>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div>
+                <button mat-raised-button style="color:blue">Salvar</button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    </form>
